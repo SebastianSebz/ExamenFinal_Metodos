@@ -15,4 +15,14 @@ dt = 1 / (f * 128 ) #128 samples per frequency
 t = np.linspace( 0, (n-1)*dt, n) 
 y = np.sin(2 * np.pi * f * t) + np.cos(2 * np.pi * f * t * t)
 noise = 1.4*(np.random.rand(n)+0.7)
-y  =  y + noise
+yn  =  y + noise
+
+#punto A
+
+plt.plot(t, y)
+plt.savefig("senal.png")
+
+#punto B
+
+
+
